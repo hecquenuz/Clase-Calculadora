@@ -24,8 +24,12 @@ public class Calculadora {
         return a / b;
     }
 
-    public double valorAbsoluto() {
+    public double valorAbsolutoA() {
         return Math.abs(a);
+    }
+
+    public double valorAbsolutoB() {
+        return Math.abs(b);
     }
 
     public double exponente() {
