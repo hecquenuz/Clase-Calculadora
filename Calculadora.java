@@ -35,4 +35,12 @@ public class Calculadora {
     public boolean esPositivo() {
         return a >= 0;
     }
+
+    public double getA() {
+        return a;
+    }
+
+    public double getB() {
+        return b;
+    }
 }
