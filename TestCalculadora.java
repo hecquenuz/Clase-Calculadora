@@ -22,4 +22,60 @@ public class TestCalculadora {
         assertEquals(8, calculadora.getB());
     }
 
+    @Test
+    public void testSuma() {
+
+        Calculadora calculadora = new Calculadora(10, 5);
+        assertEquals(15, calculadora.suma());
+
+    }
+
+    @Test
+    public void testResta() {
+
+        Calculadora calculadora = new Calculadora(8, 5);
+        assertEquals(3, calculadora.resta());
+
+    }
+
+    @Test
+    public void testMultipliacion() {
+
+        Calculadora calculadora = new Calculadora(10, 5);
+        assertEquals(50, calculadora.multiplicacion());
+
+    }
+
+    @Test
+    public void testDivision() {
+
+        Calculadora calculadora = new Calculadora(4, 2);
+        assertEquals(2, calculadora.division());
+
+    }
+
+    @Test
+    public void testValorabsolutoA() {
+
+        Calculadora calculadora = new Calculadora(4, 2);
+        assertEquals(4, calculadora.valorAbsolutoA());
+
+    }
+
+    @Test
+    public void testValorabsolutoB() {
+
+        Calculadora calculadora = new Calculadora(4, 2);
+        assertEquals(2, calculadora.valorAbsolutoB());
+
+    }
+
+    @Test
+    public void testexponente() {
+
+        Calculadora calculadora = new Calculadora(3, 3);
+        assertEquals(27, calculadora.exponente());
+
+    }
+
 }
