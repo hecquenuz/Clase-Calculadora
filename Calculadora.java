@@ -1,43 +1,38 @@
 public class Calculadora {
 
-    public double a;
-    public double b;
+    private double a;
+    private double b;
 
     public Calculadora(double a, double b) {
         this.a = a;
         this.b = b;
     }
 
-    public double suma(double a, double b) {
+    public double suma() {
         return a + b;
     }
 
-    public double resta(double a, double b) {
+    public double resta() {
         return a - b;
     }
 
-    public double multiplicacion(double a, double b) {
+    public double multiplicacion() {
         return a * b;
     }
 
-    public double division(double a, double b) {
+    public double division() {
         return a / b;
     }
 
-    public double valorAbsoluto(double a) {
+    public double valorAbsoluto() {
         return Math.abs(a);
     }
 
-    public double exponente(double a) {
-        return Math.pow(a, 2);
+    public double exponente() {
+        return Math.pow(a, b);
     }
 
-    public boolean esPositivo(double a) {
-        if (a >= 0) {
-            return true;
-        } else {
-            return false;
-        }
-
+    public boolean esPositivo() {
+        return a >= 0;
     }
 }
