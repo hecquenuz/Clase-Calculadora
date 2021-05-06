@@ -78,4 +78,16 @@ public class TestCalculadora {
 
     }
 
+    public void testRaizcuadradaA() {
+        Calculadora calculadora = new Calculadora(25, 5);
+        assertEquals(5, calculadora.exponente());
+
+    }
+
+    public void testRaizcuadradaB() {
+        Calculadora calculadora = new Calculadora(25, 4);
+        assertEquals(2, calculadora.exponente());
+
+    }
+
 }
