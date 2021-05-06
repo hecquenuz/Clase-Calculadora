@@ -15,4 +15,11 @@ public class TestCalculadora {
 
     }
 
+    @Test
+    public void testValoresatributos() {
+        Calculadora calculadora = new Calculadora(6, 8);
+        assertEquals(6, calculadora.getA());
+        assertEquals(8, calculadora.getB());
+    }
+
 }
