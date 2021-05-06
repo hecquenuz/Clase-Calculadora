@@ -1,6 +1,7 @@
 import jdk.jfr.Timestamp;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
@@ -78,15 +79,28 @@ public class TestCalculadora {
 
     }
 
+    @Test
     public void testRaizcuadradaA() {
         Calculadora calculadora = new Calculadora(25, 5);
-        assertEquals(5, calculadora.exponente());
+        assertEquals(5, calculadora.raizCuadradaA());
 
     }
 
+    @Test
     public void testRaizcuadradaB() {
         Calculadora calculadora = new Calculadora(25, 4);
-        assertEquals(2, calculadora.exponente());
+        assertEquals(2, calculadora.raizCuadradaB());
+
+    }
+
+    @Test
+    public void testObjetos() {
+        Calculadora calculadora = new Calculadora(18, 6);
+        Calculadora calculadora2 = new Calculadora(18, 6);
+        Calculadora calculadora3 = new Calculadora(28, 1);
+        assertEquals(calculadora, calculadora2);
+        assertNotEquals(calculadora, new Integer(2));
+        assertNotEquals(calculadora, calculadora3);
 
     }
 
