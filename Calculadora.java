@@ -55,4 +55,19 @@ public class Calculadora {
     public double getB() {
         return b;
     }
+
+    @Override
+    public boolean equals(Object calculadoraObject) {
+        if (calculadoraObject instanceof Calculadora) {
+            Calculadora calculadora = (Calculadora) calculadoraObject;
+            boolean Asoniguales = this.getA() == calculadora.getA();
+            boolean Bsoniguales = this.getB() == calculadora.getB();
+
+            return Asoniguales && Bsoniguales;
+
+        } else {
+            return false;
+        }
+
+    }
 }
