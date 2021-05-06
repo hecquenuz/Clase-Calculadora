@@ -36,14 +36,6 @@ public class Calculadora {
         return Math.pow(a, b);
     }
 
-    public double raizCuadradaA() {
-        return Math.sqrt(a);
-    }
-
-    public double raizCuadradaB() {
-        return Math.sqrt(b);
-    }
-
     public boolean esPositivo() {
         return a >= 0;
     }
